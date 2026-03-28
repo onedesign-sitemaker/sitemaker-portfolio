@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>キラメキマーケット | 国産こだわり食材の通販</title>
+  <meta name="description" content="キラメキマーケットは全国の農家・漁師・生産者から直送する食材通販ショップです。収穫から48時間以内発送。農薬不使用・産地直送にこだわった食材をお届けします。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23FF6B6B'/><text y='.85em' font-size='56' x='14' fill='white' font-weight='bold'>キラ</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="loading" id="loading">
+    <div class="loading__inner">
+      <div class="loading__logo">キラメキ<br>マーケット</div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <span class="header__logo-icon">★</span>
+        <span class="header__logo-text">キラメキマーケット</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#features" class="header__nav-link">こだわり</a></li>
+          <li><a href="#products" class="header__nav-link">商品一覧</a></li>
+          <li><a href="#producers" class="header__nav-link">生産者紹介</a></li>
+          <li><a href="#reviews" class="header__nav-link">口コミ</a></li>
+          <li><a href="#shop" class="header__nav-link header__nav-link--cta">お買い物へ</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__inner container">
+        <div class="hero__text">
+          <p class="hero__tag">産地直送 / 48時間以内発送</p>
+          <h1 class="hero__title">畑から食卓まで、<br><span class="hero__title-accent">まっすぐに。</span></h1>
+          <p class="hero__sub">全国50以上の農家・漁師から直送。収穫から48時間以内にお届けするから、スーパーでは出会えない「本当の新鮮さ」が届きます。</p>
+          <div class="hero__cta">
+            <a href="#products" class="btn btn--primary"><span class="material-icons">shopping_cart</span> 今週の目玉を見る</a>
+            <a href="#producers" class="btn btn--secondary">生産者を見る</a>
+          </div>
+          <div class="hero__tags">
+            <span>農薬不使用</span>
+            <span>無添加</span>
+            <span>送料無料（5,000円以上）</span>
+            <span>定期購入あり</span>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <img src="https://placehold.co/560x560/FFE66D/2D3436?text=Fresh+Vegetables" alt="新鮮な野菜" class="hero__img">
+          <div class="hero__badge hero__badge--1"><span class="material-icons">eco</span>農薬不使用</div>
+          <div class="hero__badge hero__badge--2"><span class="material-icons">local_shipping</span>48h発送</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>採れたて野菜</span><span>●</span>
+        <span>天然魚介</span><span>●</span>
+        <span>平飼い卵</span><span>●</span>
+        <span>山形牛</span><span>●</span>
+        <span>有機栽培米</span><span>●</span>
+        <span>みかん/柑橘類</span><span>●</span>
+        <span>クラフトビール</span><span>●</span>
+        <span>手作りジャム</span><span>●</span>
+        <span>採れたて野菜</span><span>●</span>
+        <span>天然魚介</span><span>●</span>
+        <span>平飼い卵</span><span>●</span>
+        <span>山形牛</span><span>●</span>
+        <span>有機栽培米</span><span>●</span>
+      </div>
+    </div>
+
+    <section class="features section" id="features">
+      <div class="features__inner container">
+        <p class="section-label">OUR PROMISE</p>
+        <h2 class="section-title">キラメキマーケットの<br>3つのこだわり</h2>
+        <div class="features__grid">
+          <div class="feature-card fade-in">
+            <div class="feature-card__emoji"><span class="material-icons">agriculture</span></div>
+            <h3 class="feature-card__title">産地と生産者が見える</h3>
+            <p class="feature-card__body">商品ページには必ず生産者の顔写真と生産地・栽培方法を掲載。「誰が、どこで、どうやって作ったか」が全部わかります。</p>
+          </div>
+          <div class="feature-card fade-in">
+            <div class="feature-card__emoji"><span class="material-icons">timer</span></div>
+            <h3 class="feature-card__title">収穫から48時間以内に発送</h3>
+            <p class="feature-card__body">収穫・漁獲したその日に仕分けして出荷します。冷蔵輸送にこだわり、スーパーに並ぶよりずっと新鮮な状態でお届けします。</p>
+          </div>
+          <div class="feature-card fade-in">
+            <div class="feature-card__emoji"><span class="material-icons">verified</span></div>
+            <h3 class="feature-card__title">農薬・添加物の使用基準が厳しい</h3>
+            <p class="feature-card__body">農薬不使用または特別栽培農産物のみを取り扱い。加工品も無添加を基本としています。掲載前に必ず審査します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="products__inner container">
+        <p class="section-label">THIS WEEK</p>
+        <h2 class="section-title">今週のおすすめ</h2>
+        <div class="products__grid">
+          <div class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/400x400/A8E6CF/2D3436?text=有機トマト" alt="有機トマト" class="product-card__img">
+              <span class="product-card__badge">NEW</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__origin">熊本県・山田農園</p>
+              <h3 class="product-card__name">有機栽培 桃太郎トマト（1kg）</h3>
+              <p class="product-card__desc">糖度8以上保証。完熟で収穫するため、甘みと旨みが段違い。</p>
+              <p class="product-card__price">¥1,980<span class="product-card__tax">（税込・送料別）</span></p>
+              <a href="#shop" class="btn btn--cart"><span class="material-icons">add_shopping_cart</span> カートに追加</a>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/400x400/FFE66D/2D3436?text=平飼い卵" alt="平飼い卵" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__origin">愛媛県・えひめファーム</p>
+              <h3 class="product-card__name">平飼い放し飼い 卵（20個）</h3>
+              <p class="product-card__desc">鶏が自由に動ける環境で育てられた鶏の卵。黄身が濃くてプリプリ。</p>
+              <p class="product-card__price">¥1,480<span class="product-card__tax">（税込・送料別）</span></p>
+              <a href="#shop" class="btn btn--cart"><span class="material-icons">add_shopping_cart</span> カートに追加</a>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/400x400/FF8B94/2D3436?text=天然真鯛" alt="天然真鯛" class="product-card__img">
+              <span class="product-card__badge product-card__badge--hot">人気</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__origin">愛媛県・宇和島産</p>
+              <h3 class="product-card__name">天然真鯛（1尾・約1kg）</h3>
+              <p class="product-card__desc">延縄漁法で1尾ずつ丁寧に釣り上げた天然真鯛。鮮度抜群で刺身に。</p>
+              <p class="product-card__price">¥3,280<span class="product-card__tax">（税込・送料別）</span></p>
+              <a href="#shop" class="btn btn--cart"><span class="material-icons">add_shopping_cart</span> カートに追加</a>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/400x400/4ECDC4/2D3436?text=有機米" alt="有機栽培米" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__origin">新潟県・魚沼産</p>
+              <h3 class="product-card__name">有機栽培 コシヒカリ（5kg）</h3>
+              <p class="product-card__desc">農薬・化学肥料不使用。魚沼の清流と土で育てた米。食感と甘みが格別。</p>
+              <p class="product-card__price">¥4,500<span class="product-card__tax">（税込・送料別）</span></p>
+              <a href="#shop" class="btn btn--cart"><span class="material-icons">add_shopping_cart</span> カートに追加</a>
+            </div>
+          </div>
+        </div>
+        <div class="products__more">
+          <a href="#shop" class="btn btn--all">すべての商品を見る <span class="material-icons">arrow_forward</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="producers section" id="producers">
+      <div class="producers__inner container">
+        <p class="section-label">PRODUCERS</p>
+        <h2 class="section-title">生産者さんを紹介</h2>
+        <div class="producers__grid">
+          <div class="producer-card fade-in">
+            <img src="https://placehold.co/300x300/A8E6CF/2D3436?text=山田農園" alt="山田農園 山田正" class="producer-card__img">
+            <h3 class="producer-card__name">山田農園 山田 正</h3>
+            <p class="producer-card__place">熊本県・山都町</p>
+            <p class="producer-card__bio">30年以上、農薬を一切使わずにトマトを育てています。「孫に食べさせたいものしか作らない」が信条。</p>
+          </div>
+          <div class="producer-card fade-in">
+            <img src="https://placehold.co/300x300/FFE66D/2D3436?text=えひめファーム" alt="えひめファーム 田村幸恵" class="producer-card__img">
+            <h3 class="producer-card__name">えひめファーム 田村 幸恵</h3>
+            <p class="producer-card__place">愛媛県・西条市</p>
+            <p class="producer-card__bio">600羽の鶏が広い牧場を自由に走り回れる環境で卵を産んでいます。エサは遺伝子組み換え不使用。</p>
+          </div>
+          <div class="producer-card fade-in">
+            <img src="https://placehold.co/300x300/FF8B94/2D3436?text=宇和島+佐藤漁業" alt="佐藤漁業 佐藤健一" class="producer-card__img">
+            <h3 class="producer-card__name">佐藤漁業 佐藤 健一</h3>
+            <p class="producer-card__place">愛媛県・宇和島市</p>
+            <p class="producer-card__bio">父の代から50年続く延縄漁。「量より質」で1日の漁獲量を制限し、最高の鮮度の魚だけを出荷します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+      <div class="reviews__inner container">
+        <p class="section-label">REVIEWS</p>
+        <h2 class="section-title">お客様の声</h2>
+        <div class="reviews__grid">
+          <div class="review-card fade-in">
+            <p class="review-card__stars">★★★★★</p>
+            <p class="review-card__text">「スーパーのトマトと全然違う。食べた瞬間に「これだ！」と思いました。子どもがトマト嫌いだったのに、これは食べると言い出して驚いています。」</p>
+            <p class="review-card__author">30代 女性（東京都）</p>
+          </div>
+          <div class="review-card fade-in">
+            <p class="review-card__stars">★★★★★</p>
+            <p class="review-card__text">「卵の黄身の色と濃さが違う。目玉焼きにすると、黄身がドーム状に盛り上がって感動。毎週定期購入に切り替えました。」</p>
+            <p class="review-card__author">40代 男性（大阪府）</p>
+          </div>
+          <div class="review-card fade-in">
+            <p class="review-card__stars">★★★★★</p>
+            <p class="review-card__text">「鯛が届いた日は刺身にしました。柔らかくて甘くて、居酒屋のとは比べ物にならない。生産者の顔が見えるって安心できますね。」</p>
+            <p class="review-card__author">50代 女性（神奈川県）</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="shop">
+      <div class="cta__inner container">
+        <p class="cta__label">SHOP NOW</p>
+        <h2 class="cta__title">初回は送料無料！<br>まず食べてみてください。</h2>
+        <p class="cta__sub">初回注文は全品送料無料。気に入らなければ全額返金保証。まずは「週替わりおまかせセット（¥2,980）」をお試しください。</p>
+        <div class="cta__actions">
+          <a href="#shop" class="btn btn--cta"><span class="material-icons">shopping_bag</span> ショップへ行く</a>
+          <a href="#products" class="btn btn--cta-outline">おまかせセットを見る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <p class="footer__logo"><span>★</span> キラメキマーケット</p>
+        <p class="footer__tagline">産地直送・こだわり食材の通販</p>
+        <p class="footer__address">〒150-0000 東京都渋谷区X-XX<br>info@kirameki-market.jp</p>
+      </div>
+      <nav class="footer__nav">
+        <ul>
+          <li><a href="#features">こだわり</a></li>
+          <li><a href="#products">商品一覧</a></li>
+          <li><a href="#producers">生産者紹介</a></li>
+          <li><a href="#reviews">口コミ</a></li>
+          <li><a href="#shop">お買い物へ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy">&copy; 2024 キラメキマーケット All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

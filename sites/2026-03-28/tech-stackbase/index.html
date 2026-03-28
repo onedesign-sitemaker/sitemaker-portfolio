@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackbase | クラウドネイティブ開発・SRE支援</title>
+  <meta name="description" content="Stackbaseはクラウドネイティブ開発・SRE（サイト信頼性エンジニアリング）・DevOps推進を支援するITスタートアップです。エンジニアチームが、あなたのプロダクトの信頼性と開発速度を同時に高めます。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%230F172A'/><text y='.9em' font-size='54' x='12' fill='%233B82F6' font-weight='bold' font-family='monospace'>S</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="loading" id="loading">
+    <div class="loading__inner">
+      <p class="loading__text">Stackbase</p>
+      <div class="loading__dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <span class="header__logo-mark">S</span>
+        <span class="header__logo-name">Stackbase</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#services" class="header__nav-link">Services</a></li>
+          <li><a href="#cases" class="header__nav-link">Cases</a></li>
+          <li><a href="#tech" class="header__nav-link">Technology</a></li>
+          <li><a href="#about" class="header__nav-link">About</a></li>
+          <li><a href="#contact" class="header__nav-link header__nav-link--cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__bg-text" aria-hidden="true">RELIABILITY</div>
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Cloud Native &amp; SRE</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line">信頼性と速度を、</span>
+          <span class="hero__title-line hero__title-line--accent">同時に手に入れる。</span>
+        </h1>
+        <p class="hero__sub">Stackbaseは、クラウドインフラの設計からDevOpsパイプラインの構築、SREの内製化支援まで、エンジニアチームがワンストップで担います。リリース頻度を週1回から毎日に変えた実績があります。</p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary">課題を相談する <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="#cases" class="btn btn--outline">導入事例を見る</a>
+        </div>
+      </div>
+      <div class="hero__metrics">
+        <div class="hero__metric"><span class="hero__metric-val">99.98%</span><span class="hero__metric-label">平均稼働率</span></div>
+        <div class="hero__metric"><span class="hero__metric-val">-70%</span><span class="hero__metric-label">インシデント削減</span></div>
+        <div class="hero__metric"><span class="hero__metric-val">×12</span><span class="hero__metric-label">デプロイ頻度向上</span></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+      <div class="services__inner container">
+        <p class="section-label">SERVICES</p>
+        <h2 class="section-title">サービス</h2>
+        <div class="services__grid">
+          <div class="service-card fade-in">
+            <div class="service-card__num">01</div>
+            <h3 class="service-card__title">クラウドネイティブ移行</h3>
+            <p class="service-card__body">オンプレからAWS/GCPへの段階的移行設計。Kubernetes化・マイクロサービス化・IaC導入を、現行サービスを止めずに進めます。移行後の運用コストを平均35%削減した実績があります。</p>
+            <ul class="service-card__tags">
+              <li>Kubernetes</li><li>Terraform</li><li>AWS / GCP</li>
+            </ul>
+          </div>
+          <div class="service-card fade-in">
+            <div class="service-card__num">02</div>
+            <h3 class="service-card__title">SRE支援・内製化</h3>
+            <p class="service-card__body">SLO/SLIの設定から監視アーキテクチャの構築、エラーバジェット運用の導入まで対応。自社チームがSREを自走できるようになるまで伴走します。</p>
+            <ul class="service-card__tags">
+              <li>Datadog</li><li>Grafana</li><li>PagerDuty</li>
+            </ul>
+          </div>
+          <div class="service-card fade-in">
+            <div class="service-card__num">03</div>
+            <h3 class="service-card__title">CI/CDパイプライン構築</h3>
+            <p class="service-card__body">GitHub Actions / GitLab CIを活用した自動テスト・自動デプロイの仕組みを構築。コードレビューからプロダクション反映まで、人の手が不要になる状態を目指します。</p>
+            <ul class="service-card__tags">
+              <li>GitHub Actions</li><li>ArgoCD</li><li>Helm</li>
+            </ul>
+          </div>
+          <div class="service-card fade-in">
+            <div class="service-card__num">04</div>
+            <h3 class="service-card__title">セキュリティ・コンプライアンス</h3>
+            <p class="service-card__body">Shift-left セキュリティの導入支援。SAST/DASTの自動化、コンテナイメージスキャン、IAMポリシーの最小権限設計を行い、開発スピードを落とさずにセキュリティを強化します。</p>
+            <ul class="service-card__tags">
+              <li>Snyk</li><li>Trivy</li><li>OPA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cases -->
+    <section class="cases section" id="cases">
+      <div class="cases__inner container">
+        <p class="section-label">CASES</p>
+        <h2 class="section-title">導入事例</h2>
+        <div class="cases__grid">
+          <div class="case-card fade-in">
+            <p class="case-card__industry">SaaS / 決済</p>
+            <h3 class="case-card__title">決済SaaSの99.9%→99.98%へのSLO引き上げ</h3>
+            <p class="case-card__body">月次インシデント件数が12件から3件に。SLO/SLI設定とエラーバジェット制度の導入、監視の可視化により、対障害MTTR（平均復旧時間）を4時間から22分に短縮。</p>
+            <div class="case-card__results">
+              <span>MTTR -91%</span><span>インシデント -75%</span>
+            </div>
+          </div>
+          <div class="case-card fade-in">
+            <p class="case-card__industry">EC / Retail</p>
+            <h3 class="case-card__title">ECサイトのリリースサイクルを週1回→毎日に</h3>
+            <p class="case-card__body">GitHub Actionsによる自動テスト・自動デプロイの整備。本番環境でのカナリアリリース導入により、障害発生率を下げながらリリース頻度を12倍に。</p>
+            <div class="case-card__results">
+              <span>デプロイ頻度 ×12</span><span>障害率 -60%</span>
+            </div>
+          </div>
+          <div class="case-card fade-in">
+            <p class="case-card__industry">Fintech / 保険</p>
+            <h3 class="case-card__title">AWS移行でインフラコストを35%削減</h3>
+            <p class="case-card__body">オンプレのレガシーシステムをEKS + RDS Aurora に段階移行。Terraformによる完全IaC化で、インフラ変更のリードタイムを2週間から2時間に短縮。</p>
+            <div class="case-card__results">
+              <span>コスト -35%</span><span>変更LT -96%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech -->
+    <section class="tech section" id="tech">
+      <div class="tech__inner container">
+        <p class="section-label">TECHNOLOGY</p>
+        <h2 class="section-title">主要技術スタック</h2>
+        <div class="tech__grid">
+          <div class="tech-group fade-in">
+            <h3 class="tech-group__title">Cloud</h3>
+            <div class="tech-group__items">
+              <span>AWS</span><span>Google Cloud</span><span>Azure</span>
+            </div>
+          </div>
+          <div class="tech-group fade-in">
+            <h3 class="tech-group__title">Container & Orchestration</h3>
+            <div class="tech-group__items">
+              <span>Kubernetes</span><span>Docker</span><span>Helm</span><span>ArgoCD</span>
+            </div>
+          </div>
+          <div class="tech-group fade-in">
+            <h3 class="tech-group__title">IaC & CI/CD</h3>
+            <div class="tech-group__items">
+              <span>Terraform</span><span>GitHub Actions</span><span>GitLab CI</span>
+            </div>
+          </div>
+          <div class="tech-group fade-in">
+            <h3 class="tech-group__title">Observability</h3>
+            <div class="tech-group__items">
+              <span>Datadog</span><span>Grafana</span><span>Prometheus</span><span>OpenTelemetry</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="about__inner container">
+        <div class="about__text">
+          <p class="section-label">ABOUT</p>
+          <h2 class="section-title">なぜ我々は、<br>SREに特化するのか。</h2>
+          <p class="about__body">大規模サービスを運用する大手企業で、インフラエンジニアとしてキャリアを積んだメンバーで創業しました。「機能開発は速いのに、障害が多くて結局ユーザーが離れていく」という現場の悩みを何度も見てきました。</p>
+          <p class="about__body">信頼性を後回しにしたプロダクトは、成長の踊り場で止まります。Stackbaseは「信頼性への投資が、最も高いROIをもたらす」という信念のもとで、エンジニアリングを提供します。</p>
+          <div class="about__members">
+            <div class="about__member">
+              <img src="https://placehold.co/80x80/1E293B/3B82F6?text=CEO" alt="CEO 木村 浩介" class="about__member-img">
+              <div>
+                <p class="about__member-name">木村 浩介</p>
+                <p class="about__member-role">CEO / SRE Lead</p>
+              </div>
+            </div>
+            <div class="about__member">
+              <img src="https://placehold.co/80x80/1E293B/3B82F6?text=CTO" alt="CTO 渡辺 祐樹" class="about__member-img">
+              <div>
+                <p class="about__member-name">渡辺 祐樹</p>
+                <p class="about__member-role">CTO / Infrastructure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual">
+          <img src="https://placehold.co/560x640/0F172A/3B82F6?text=Team+Photo" alt="チーム写真" class="about__img">
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta__inner container">
+        <p class="cta__eyebrow">FIRST STEP</p>
+        <h2 class="cta__title">まず、現状の課題を<br>話してみませんか。</h2>
+        <p class="cta__sub">初回の相談は無料。「何から始めればいいかわからない」という状態でも大丈夫です。<br>現状のアーキテクチャを聞かせていただき、改善の優先順位を一緒に整理します。</p>
+        <a href="#contact" class="btn btn--primary">無料相談を予約する <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="contact__inner container">
+        <p class="section-label">CONTACT</p>
+        <h2 class="section-title">お問い合わせ</h2>
+        <form class="contact__form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">会社名 <span class="form-required">必須</span></label>
+              <input type="text" class="form-input" placeholder="株式会社〇〇">
+            </div>
+            <div class="form-group">
+              <label class="form-label">お名前 <span class="form-required">必須</span></label>
+              <input type="text" class="form-input" placeholder="山田 太郎">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">メールアドレス <span class="form-required">必須</span></label>
+            <input type="email" class="form-input" placeholder="your@company.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">現在の課題・ご相談内容</label>
+            <textarea class="form-textarea" rows="6" placeholder="例：「インシデントが頻発している」「デプロイが手作業で月2回しかできない」「クラウドコストが高すぎる」など、なんでも教えてください。"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">送信する <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <p class="footer__logo"><span>S</span>tackbase</p>
+        <p class="footer__tagline">Cloud Native &amp; SRE Partners</p>
+        <p class="footer__address">〒100-0000 東京都千代田区神田X-XX<br>contact@stackbase.jp</p>
+      </div>
+      <nav class="footer__nav">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#cases">Cases</a></li>
+          <li><a href="#tech">Technology</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy">&copy; 2024 Stackbase Inc. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

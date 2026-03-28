@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Blanc | 表参道のヘア・ビューティサロン</title>
+  <meta name="description" content="Salon Blancは表参道の隠れ家サロン。カット・カラー・トリートメントを、自然由来成分にこだわったメニューでご提供します。予約優先制・完全個室対応。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%238B7E6A'/><text y='.85em' font-size='44' x='12' fill='%23FDFBF9' font-style='italic'>Sb</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Josefin+Sans:wght@300;400&family=Noto+Sans+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="loading" id="loading">
+    <div class="loading__inner">
+      <p class="loading__en">Salon Blanc</p>
+      <p class="loading__jp">サロン ブラン</p>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <span class="header__logo-en">Salon Blanc</span>
+        <span class="header__logo-jp">表参道</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#concept" class="header__nav-link">CONCEPT</a></li>
+          <li><a href="#menu" class="header__nav-link">MENU</a></li>
+          <li><a href="#gallery" class="header__nav-link">GALLERY</a></li>
+          <li><a href="#staff" class="header__nav-link">STAFF</a></li>
+          <li><a href="#reserve" class="header__nav-link header__nav-link--cta">RESERVE</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__frame">
+        <img src="https://placehold.co/1600x900/C8B8A8/FDFBF9?text=Salon+Interior" alt="" class="hero__img">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="hero__label">Omotesando, Tokyo</p>
+          <h1 class="hero__title">
+            <span class="hero__title-en">Beauty, Naturally.</span>
+            <span class="hero__title-jp">自然の力で、美しく。</span>
+          </h1>
+          <a href="#reserve" class="btn btn--hero">ご予約はこちら</a>
+        </div>
+        <div class="hero__scroll">
+          <span>SCROLL</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concept -->
+    <section class="concept section" id="concept">
+      <div class="concept__inner container">
+        <div class="concept__text">
+          <p class="section-label">CONCEPT</p>
+          <h2 class="section-title">髪を傷めない。<br>それだけを考えてきました。</h2>
+          <p class="concept__body">Salon Blancが使うカラー剤は、すべてオーガニック認証を取得したものです。市販品の平均と比べ、アンモニア配合量が80%少なく、施術後の手触りが明らかに変わります。</p>
+          <p class="concept__body">「おしゃれをするたびに髪が傷む」という悩みをなくしたい。そんな思いでサロンをはじめ、12年が経ちました。今では「どこに行っても直らなかった傷みが、ここに来てから落ち着いた」というお客様が全体の6割以上います。</p>
+          <a href="#menu" class="btn btn--outline-dark">メニューを見る</a>
+        </div>
+        <div class="concept__visual">
+          <img src="https://placehold.co/480x600/D8CEC4/5A4A3A?text=Hair+Treatment" alt="ヘアトリートメントの様子" class="concept__img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu section" id="menu">
+      <div class="menu__inner container">
+        <p class="section-label">MENU</p>
+        <h2 class="section-title">メニュー・料金</h2>
+        <div class="menu__grid">
+          <div class="menu-item fade-in">
+            <p class="menu-item__cat">Cut</p>
+            <h3 class="menu-item__name">カット</h3>
+            <p class="menu-item__desc">骨格・顔型を見たカウンセリングから。洗い流し・ブローまで含みます。</p>
+            <p class="menu-item__price">¥7,700 〜</p>
+          </div>
+          <div class="menu-item fade-in">
+            <p class="menu-item__cat">Color</p>
+            <h3 class="menu-item__name">オーガニックカラー</h3>
+            <p class="menu-item__desc">アンモニアフリー処方。においが少なく、頭皮への刺激を最小限に抑えます。</p>
+            <p class="menu-item__price">¥14,300 〜</p>
+          </div>
+          <div class="menu-item fade-in">
+            <p class="menu-item__cat">Treatment</p>
+            <h3 class="menu-item__name">集中トリートメント</h3>
+            <p class="menu-item__desc">毛髪内部から補修する3ステップケア。1回の施術でツヤと弾力の変化を実感できます。</p>
+            <p class="menu-item__price">¥8,800 〜</p>
+          </div>
+          <div class="menu-item fade-in">
+            <p class="menu-item__cat">Head Spa</p>
+            <h3 class="menu-item__name">ヘッドスパ</h3>
+            <p class="menu-item__desc">頭皮の血流を促進し、ストレスによる抜け毛・薄毛をケアします。40分または60分。</p>
+            <p class="menu-item__price">¥6,600 〜</p>
+          </div>
+          <div class="menu-item fade-in">
+            <p class="menu-item__cat">Perm</p>
+            <h3 class="menu-item__name">デジタルパーマ</h3>
+            <p class="menu-item__desc">低温処理でキューティクルへのダメージを抑えたパーマ。乾かすだけでまとまるスタイルへ。</p>
+            <p class="menu-item__price">¥19,800 〜</p>
+          </div>
+          <div class="menu-item fade-in">
+            <p class="menu-item__cat">Set</p>
+            <h3 class="menu-item__name">Cut + Color セット</h3>
+            <p class="menu-item__desc">カット＋オーガニックカラー。トリートメントのオプション追加も可能です。</p>
+            <p class="menu-item__price">¥19,800 〜</p>
+          </div>
+        </div>
+        <p class="menu__note">表示はすべて税込価格です。長さ・毛量により変動する場合があります。カウンセリング時にご確認ください。</p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery section" id="gallery">
+      <div class="gallery__head container">
+        <p class="section-label">GALLERY</p>
+        <h2 class="section-title">スタイルギャラリー</h2>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery-item fade-in">
+          <div class="gallery-item__img-wrap">
+            <img src="https://placehold.co/400x400/D4C8BC/5A4A3A?text=Style+01" alt="スタイル01" class="gallery-item__img">
+            <div class="gallery-item__overlay">
+              <p class="gallery-item__name">Short Bob</p>
+              <p class="gallery-item__tag">Cut + Color</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <div class="gallery-item__img-wrap">
+            <img src="https://placehold.co/400x400/C8BEB0/5A4A3A?text=Style+02" alt="スタイル02" class="gallery-item__img">
+            <div class="gallery-item__overlay">
+              <p class="gallery-item__name">Natural Wave</p>
+              <p class="gallery-item__tag">Perm</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <div class="gallery-item__img-wrap">
+            <img src="https://placehold.co/400x400/BAB0A4/5A4A3A?text=Style+03" alt="スタイル03" class="gallery-item__img">
+            <div class="gallery-item__overlay">
+              <p class="gallery-item__name">Highlight Beige</p>
+              <p class="gallery-item__tag">Color</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <div class="gallery-item__img-wrap">
+            <img src="https://placehold.co/400x400/CEC6BC/5A4A3A?text=Style+04" alt="スタイル04" class="gallery-item__img">
+            <div class="gallery-item__overlay">
+              <p class="gallery-item__name">Medium Layer</p>
+              <p class="gallery-item__tag">Cut</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <div class="gallery-item__img-wrap">
+            <img src="https://placehold.co/400x400/D8D0C8/5A4A3A?text=Style+05" alt="スタイル05" class="gallery-item__img">
+            <div class="gallery-item__overlay">
+              <p class="gallery-item__name">Glossy Straight</p>
+              <p class="gallery-item__tag">Treatment + Cut</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <div class="gallery-item__img-wrap">
+            <img src="https://placehold.co/400x400/C4BAB2/5A4A3A?text=Style+06" alt="スタイル06" class="gallery-item__img">
+            <div class="gallery-item__overlay">
+              <p class="gallery-item__name">Ash Brown</p>
+              <p class="gallery-item__tag">Color</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff -->
+    <section class="staff section" id="staff">
+      <div class="staff__inner container">
+        <p class="section-label">STAFF</p>
+        <h2 class="section-title">スタッフ</h2>
+        <div class="staff__grid">
+          <div class="staff-card fade-in">
+            <img src="https://placehold.co/320x320/D8CEC4/5A4A3A?text=Ayaka" alt="佐藤 彩花" class="staff-card__img">
+            <h3 class="staff-card__name">佐藤 彩花</h3>
+            <p class="staff-card__role">Director</p>
+            <p class="staff-card__bio">オーガニックカラーの第一人者として業界で10年以上活動。「髪を育てる美容師」をモットーに、毛髪診断士の資格も持つ。</p>
+          </div>
+          <div class="staff-card fade-in">
+            <img src="https://placehold.co/320x320/C8C0B8/5A4A3A?text=Kenji" alt="山田 健二" class="staff-card__img">
+            <h3 class="staff-card__name">山田 健二</h3>
+            <p class="staff-card__role">Senior Stylist</p>
+            <p class="staff-card__bio">骨格に合わせたカットが得意。デジタルパーマの技術を修行のためにロンドンで習得。「毎朝が楽になるスタイル」を提案します。</p>
+          </div>
+          <div class="staff-card fade-in">
+            <img src="https://placehold.co/320x320/BEB6B0/5A4A3A?text=Miki" alt="田中 美樹" class="staff-card__img">
+            <h3 class="staff-card__name">田中 美樹</h3>
+            <p class="staff-card__role">Stylist</p>
+            <p class="staff-card__bio">ヘッドスパを担当。アロマテラピー資格保有。頭皮のコンディションを整えながら、心もリラックスできる施術を心がけています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta__inner container">
+        <p class="cta__label">RESERVE</p>
+        <h2 class="cta__title">初回限定 20%オフで<br>お試しいただけます。</h2>
+        <p class="cta__sub">初めてのご来店の方は、全メニュー20%オフ。<br>カウンセリングだけでも歓迎です。</p>
+        <a href="#reserve" class="btn btn--cta">ご予約・カウンセリング予約</a>
+      </div>
+    </section>
+
+    <!-- Reserve -->
+    <section class="reserve section" id="reserve">
+      <div class="reserve__inner container">
+        <p class="section-label">RESERVATION</p>
+        <h2 class="section-title">ご予約</h2>
+        <div class="reserve__info">
+          <div class="reserve__hours">
+            <h3>営業時間・所在地</h3>
+            <dl>
+              <dt>営業時間</dt><dd>10:00〜20:00（最終受付 18:00）</dd>
+              <dt>定休日</dt><dd>火曜日・第2・3月曜日</dd>
+              <dt>住所</dt><dd>〒150-0001 東京都渋谷区神宮前X-XX-X 〇〇ビル 2F</dd>
+              <dt>最寄り駅</dt><dd>表参道駅 A2出口より徒歩3分</dd>
+              <dt>電話</dt><dd>03-0000-0000</dd>
+            </dl>
+          </div>
+          <form class="reserve__form">
+            <div class="form-group">
+              <label class="form-label">お名前 <span class="form-required">必須</span></label>
+              <input type="text" class="form-input" placeholder="山田 花子">
+            </div>
+            <div class="form-group">
+              <label class="form-label">電話番号 <span class="form-required">必須</span></label>
+              <input type="tel" class="form-input" placeholder="090-0000-0000">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">ご希望日</label>
+                <input type="date" class="form-input">
+              </div>
+              <div class="form-group">
+                <label class="form-label">ご希望時間</label>
+                <select class="form-select">
+                  <option value="">選択</option>
+                  <option>10:00〜</option><option>11:00〜</option><option>12:00〜</option>
+                  <option>13:00〜</option><option>14:00〜</option><option>15:00〜</option>
+                  <option>16:00〜</option><option>17:00〜</option><option>18:00〜</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">ご希望メニュー</label>
+              <select class="form-select">
+                <option>選択してください</option>
+                <option>カット</option>
+                <option>オーガニックカラー</option>
+                <option>集中トリートメント</option>
+                <option>ヘッドスパ</option>
+                <option>デジタルパーマ</option>
+                <option>Cut + Color セット</option>
+                <option>カウンセリングのみ</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">髪のお悩み・ご要望</label>
+              <textarea class="form-textarea" rows="4" placeholder="現在の髪の状態、なりたいスタイル、アレルギーなど、何でもお書きください。"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">予約リクエストを送る</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <p class="footer__logo-en">Salon Blanc</p>
+        <p class="footer__address">〒150-0001 東京都渋谷区神宮前X-XX-X 2F<br>TEL: 03-0000-0000</p>
+      </div>
+      <nav class="footer__nav">
+        <ul>
+          <li><a href="#concept">CONCEPT</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#staff">STAFF</a></li>
+          <li><a href="#reserve">RESERVE</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy">&copy; 2024 Salon Blanc All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
